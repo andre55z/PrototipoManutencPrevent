@@ -78,7 +78,17 @@ section.login input[type="password"] {
     text-align: center;
 }
 .widgett input[type="text"],
-.widgett input[type="password"] {
+.widgett input[type="password"]
+.widget select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+#setorSoli
+{
   padding: 10px;
   font-size: 14px;
   border: 1px solid #cbd5e0;

@@ -6,7 +6,7 @@ const messageCont = document.getElementById('messageContainer');
 
 
 const matricula = document.getElementById('matricula');
-const setor = document.getElementById('setor');
+const setor = document.getElementById('setorSoli');
 const senha = document.getElementById('pswd');
 const confirmarSenha = document.getElementById('confpswd');
 const entrar = document.getElementById('Entrar');
@@ -44,7 +44,7 @@ confirmMat.addEventListener('click', () => {
     widget.classList.add('hidden');
 
  
-    messageCont.style.display = 'block';
+    messageCont.style.display = 'flex';
 
  
     setTimeout(() => {
@@ -69,13 +69,6 @@ entrar.addEventListener('click', ()=>
                 widgetcho.classList.add('visible');
                 widsp.classList.remove('hidden');
                 widsp.classList.add('visible');
-
-                closeWidgetchoButton.addEventListener('click', () => {
-                    widsp.classList.remove('visible');
-                    widsp.classList.add('hidden');
-                    widgetcho.classList.remove('visible');
-                    widgetcho.classList.add('hidden');
-                });
 
                 paradaMaquina.addEventListener('click', ()=>
                 {
