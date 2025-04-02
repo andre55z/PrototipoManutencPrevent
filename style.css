@@ -40,17 +40,19 @@ section.login input[type="password"] {
   border-radius: 8px;
   outline: none;
   transition: all 0.3s ease;
+  width: 290px;
 }
-.bts
+
+.bts #btncadastro, #Entrar
 {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    gap:1rem;
-    height:100px;
-    width: 100px;
-    border-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: rgb(122, 122, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
 }
 .widgett
 {
@@ -111,10 +113,25 @@ section.login input[type="password"] {
 .hid, .hidden {
     display: none;
 }
-.btnclose
+.btnc #closeWidget, #confirmMat 
 {
-    margin-top: 5px;
-
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: rgb(122, 122, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btssp #fecharsup 
+{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: rgb(122, 122, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 #messageContainer
 {

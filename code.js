@@ -16,6 +16,7 @@ const widsp = document.getElementById('widsp');
 const closeWidgetchoButton = document.getElementById('closeWidgetcho');
 const paradaMaquina = document.getElementById('btparadademaq');
 const servicoProg = document.getElementById('btservicoprog');
+const fechasup = document.getElementById('fecharsup');
 
 openWidgetButton.addEventListener('click', () => {
     widget.classList.remove('hidden');
@@ -69,7 +70,11 @@ entrar.addEventListener('click', ()=>
                 widgetcho.classList.add('visible');
                 widsp.classList.remove('hidden');
                 widsp.classList.add('visible');
-
+                fechasup.addEventListener('click', ()=>
+                    {
+                        widsp.classList.remove('visible');
+                        widsp.classList.add('hidden');
+                    });
                 paradaMaquina.addEventListener('click', ()=>
                 {
                     window.location.href='./paradamaquina.html';
