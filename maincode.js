@@ -58,11 +58,11 @@ entrar.addEventListener('click', ()=>
         const SetorSelected = setorop.value;
         if (SetorSelected === "Engenharia/produção (Nível Técnico/Líder)")
             {
-                window.location.href = './engprodtec.html';
+                window.location.href = './servicoprog.html';
             }
             else if (SetorSelected === "Engenharia/produção (Nível Engenharia)")
             {
-                window.location.href = './engprodeng.html';
+                window.location.href = './servicoprog.html';
             }
             else if (SetorSelected==="Supervisor")
             {

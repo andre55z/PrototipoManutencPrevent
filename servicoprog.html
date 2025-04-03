@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Lista de Itens</h2>
+        <h2>Lista de Máquinas/Equipamentos</h2>
         <input type="text" placeholder="Pesquise um item..." disabled>
 
         <ul>
@@ -26,18 +26,31 @@
 
     <div class="widget" id="widget">
         <p id="widgetText">Texto do Widget</p>
+    
+        <div id="Notificação">
+            <p>Notificação 1</p>
+        </div>
+        <div id="Notificação">
+            <p>Notificação 2</p>
+        </div>
+        <div id="Notificação">
+            <p>Notificação 3</p>
+        </div>
+        <button class="btnabrirnot" id="abrirnot">Abrir Notificação</button>
+
+
         <button class="close-btn" onclick="hideWidget()">Fechar</button>
     </div>
+    <div class="hidden" id="widgetdados">
+        <select id="selemod">
+            <option value="" disabled selected></option>
+            <option value="Preventiva">Preventiva</option>
+            <option value="Programada">Programada</option>
+        </select>
+    </div>
 
-    <script>
-        function showWidget(item) {
-            document.getElementById("widgetText").textContent = "Você selecionou: " + item;
-            document.getElementById("widget").classList.add("visible");
-        }
 
-        function hideWidget() {
-            document.getElementById("widget").classList.remove("visible");
-        }
-    </script>
+
+<script src="servprogcode.js"></script>
 </body>
 </html>
