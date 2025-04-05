@@ -81,7 +81,7 @@ entrar.addEventListener('click', ()=>
                 });
                 servicoProg.addEventListener('click', ()=>
                 {
-                    window.location.href='./servicoprog.html';
+                    window.location.href='./servicoprogsp.html';
                 });
 
 
