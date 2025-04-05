@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="paradamaq.css">
 </head>
 <body>
-    <h1>ParadaDeMaq</h1>
+    <div id="list" class="list">
+        <h3>Solicitações de parada de maquina</h3>
+        <ul>
+            <li onclick="showstop('Parada 1')">Parada 1</li>
+            <li onclick="showstop('Parada 1')">Parada 2</li>
+            <li onclick="showstop('Parada 1')">Parada 3</li>
+        </ul>
+    </div>
+
+    <div class="widget" id="widget">
+        <h2>Aceitar solicitação?<h2>
+        <button class="btnaceit" id="btnaceit">Aceitar</button>
+        <button class="btnrecu" id="btnrecu">Recusar</button>
+        <div id="close">
+            <button class="closeWid" id="closeWid">Voltar</button>
+        </div>
+
+    </div>
+<script src="paradamaq.js"></script>
 </body>
 </html>

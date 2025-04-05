@@ -29,3 +29,19 @@ btnEnviar.addEventListener('click', ()=>{
     widdados.classList.add("hidden");
     container.style.removeProperty("display");
 })
+
+const selemod = document.getElementById("selemod");
+const numsap = document.getElementById("numsap");
+
+selemod.addEventListener('change', ()=>
+    {
+        if(selemod.value === "Programada")
+        {
+            numsap.removeAttribute("disabled")
+        }
+        else
+        {
+            numsap.setAttribute("disabled", true);
+        }
+
+    })
