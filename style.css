@@ -1,0 +1,235 @@
+body
+{
+    background-color: rgb(204, 204, 204);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin: 0;
+    display:flex;
+}
+.login
+{
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.login img
+{
+    width:175px;
+    height:150px;
+    border-radius: 100px;
+    border-color: 1px black;
+    margin-top: -40px;
+}
+.login h3
+{
+    margin:1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+section.login input[type="text"],
+section.login input[type="password"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 290px;
+}
+
+.bts #btncadastro, #Entrar
+{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: rgb(122, 122, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.widgett
+{
+    margin-top: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-left: #333;
+    border-top: lightskyblue;
+    background-color: lightskyblue ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height:500px;
+}
+.widgett h2
+{
+    font-family: 'Courier New', Courier, monospace
+}
+.widgett h3
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: center;
+}
+.widgett input[type="text"],
+.widgett input[type="password"]
+.widget select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+#setorSoli
+{
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+#widget.visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+.hid, .hidden {
+    display: none;
+}
+.btnc #closeWidget, #confirmMat 
+{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: rgb(122, 122, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btssp #fecharsup 
+{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: rgb(122, 122, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#messageContainer
+{
+    
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) ;
+    display: none;
+}
+#setorLogin
+{
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+#widgetcho {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightskyblue;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#widgetcho h2, 
+#widgetcho h3 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 15px;
+}
+
+#widgetcho.visible {
+    display: flex;
+}
+
+#widgetcho.hidden {
+    display: none;
+}
+#widsp.visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#widsp.hidden {
+    display: none;
+}
+
+.btssp
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+    height:100px;
+    width: 100px;
+    border-bottom: 20px;
+    border-radius: 10px;
+    color:lightblue;
+}
+#widmanu
+{
+    display:none;
+}
+#widmanu.visible
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
