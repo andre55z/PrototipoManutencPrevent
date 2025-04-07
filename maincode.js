@@ -17,6 +17,9 @@ const closeWidgetchoButton = document.getElementById('closeWidgetcho');
 const paradaMaquina = document.getElementById('btparadademaq');
 const servicoProg = document.getElementById('btservicoprog');
 const fechasup = document.getElementById('fecharsup');
+const progmanu = document.getElementById("btmanuprog");
+const prevmanu = document.getElementById("btmanuprev");
+const widmanu = document.getElementById("widmanu");
 
 openWidgetButton.addEventListener('click', () => {
     widget.classList.remove('hidden');
@@ -62,7 +65,8 @@ entrar.addEventListener('click', ()=>
             }
             else if (SetorSelected === "Engenharia/produção (Nível Engenharia)")
             {
-                window.location.href = './servicoprog.html';
+                widmanu.classList.add('visible');
+                
             }
             else if (SetorSelected==="Supervisor")
             {
@@ -91,3 +95,8 @@ entrar.addEventListener('click', ()=>
                 alert("Por favor, selecione um setor!")
             }
     });
+
+
+
+
+
