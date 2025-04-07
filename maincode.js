@@ -20,6 +20,10 @@ const fechasup = document.getElementById('fecharsup');
 const progmanu = document.getElementById("btmanuprog");
 const prevmanu = document.getElementById("btmanuprev");
 const widmanu = document.getElementById("widmanu");
+const widmanusts = document.getElementById("widmenusts"); 
+const btcloseprod = document.getElementById("btclose");
+const btservpro = document.getElementById("btmanuprog");
+const btservpre = document.getElementById("btmanuprev");
 
 openWidgetButton.addEventListener('click', () => {
     widget.classList.remove('hidden');
@@ -61,11 +65,45 @@ entrar.addEventListener('click', ()=>
         const SetorSelected = setorop.value;
         if (SetorSelected === "Engenharia/produção (Nível Técnico/Líder)")
             {
-                window.location.href = './servicoprog.html';
+
+                widmanu.classList.remove("hiddenn");
+                widmanu.classList.add("visible");
+                widmanusts.classList.remove("hiddenn");
+                widmanusts.classList.add("visible");
+                btcloseprod.addEventListener('click', ()=>
+                    {
+                        widmanu.classList.remove("visible");
+                        widmanu.classList.add("hiddenn");
+                    });
+                btservpro.addEventListener('click', ()=>
+                    {
+                        window.location.href='./servicoprogmanu.html';
+                    });
+                btservpre.addEventListener('click', ()=>
+                    {
+                        window.location.href='./servicoprevmanu.html'
+                    });
             }
             else if (SetorSelected === "Engenharia/produção (Nível Engenharia)")
             {
-                widmanu.classList.add('visible');
+
+                widmanu.classList.remove("hiddenn");
+                widmanu.classList.add("visible");
+                widmanusts.classList.remove("hiddenn");
+                widmanusts.classList.add("visible");
+                btcloseprod.addEventListener('click', ()=>
+                    {
+                        widmanu.classList.remove("visible");
+                        widmanu.classList.add("hiddenn");
+                    });
+                btservpro.addEventListener('click', ()=>
+                    {
+                        window.location.href='./servicoprogmanu.html';
+                    });
+                btservpre.addEventListener('click', ()=>
+                    {
+                        window.location.href='./servicoprevmanu.html'
+                    });
                 
             }
             else if (SetorSelected==="Supervisor")
@@ -80,13 +118,13 @@ entrar.addEventListener('click', ()=>
                         widsp.classList.add('hidden');
                     });
                 paradaMaquina.addEventListener('click', ()=>
-                {
-                    window.location.href='./paradamaquina.html';
-                });
+                    {
+                        window.location.href='./paradamaquina.html';
+                    });
                 servicoProg.addEventListener('click', ()=>
-                {
-                    window.location.href='./servicoprogsp.html';
-                });
+                    {
+                        window.location.href='./servicoprogsp.html';
+                    });
 
 
             }
