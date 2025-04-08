@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="servicoprogmanu.css">
 
 </head>
 <body>
     <div class="container" id="Container">
         <h2>Lista de Notificações</h2>
-        <input type="text" placeholder="Pesquise um item..." disabled>
+        <h3>Ordenar por...</h3>
+        <select id="seleord">
+            <option value="" disabled></option>
+            <option value="Hierarquia">Hierarquia de cargos</option>
+            <option value="Urgentes">Urgência</option>
+            <option value="Data">Data cronológica</option>
+        </select>
 
         <ul>
-            <li onclick="showWidget('')">Notificação 1 - </li>
-            <li onclick="showWidget('Notificação 2')">Notificação 1 </li>
-            <li onclick="showWidget('Notificação 3')">Notificação 2 </li>
-            <li onclick="showWidget('Notificação 4')">Notificação 3 </li>
-            <li onclick="showWidget('Notificação 5')">Notificação 4 </li>
-            <li onclick="showWidget('Notificação 6')">Notificação 5</li>
+            <li onclick="showWidget('Notificação 1')"><span style="color: red; font-weight:bold;">Notificação 1 </li>
+            <li onclick="showWidget('Notificação 2')">Notificação 2 </li>
+            <li onclick="showWidget('Notificação 3')">Notificação 3 </li>
+            <li onclick="showWidget('Notificação 4')"><span style="color: red; font-weight:bold;">Notificação 4 </li>
+            <li onclick="showWidget('Notificação 5')">Notificação 5 </li>
+            <li onclick="showWidget('Notificação 6')">Notificação 6</li>
+            <p>Texto em vermelho - flag urgente</p>
         </ul>
     </div>
 </body>
+<script src="servicoprogmanu.js"></script>
 </html>
