@@ -217,7 +217,10 @@ section.login input[type="password"] {
     border-radius: 10px;
     color:lightblue;
 }
-
+#widmanu
+{
+    display:none;
+}
 #widmanu.visible
 {
     display: flex;
@@ -230,37 +233,7 @@ section.login input[type="password"] {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
-#widmanu.hiddenn
-{
-    display:none;
-}
-#widmenusts.visible {
-    display:flex;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: lightskyblue;
-    border-radius: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 150px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#widmenusts h2, 
-#widmenusts h3 {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    font-size: 15px;
-}
-#widmenusts.hiddenn
-{
-    display:none;
-}
+
 .btnsmanu
 {
     display:flex;
@@ -272,5 +245,31 @@ section.login input[type="password"] {
     width: 100px;
     border-bottom: 20px;
     border-radius: 10px;
-    color:lightblue;
+    color:rgb(143, 9, 145);
+}
+
+#widman
+{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(225, 135, 250);
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+#widman.visible {
+    display: flex;
+}
+
+#widman.hidden {
+    display: none;
 }
