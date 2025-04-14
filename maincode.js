@@ -20,6 +20,7 @@ const fechasup = document.getElementById('fecharsup');
 const progmanu = document.getElementById("btmanuprog");
 const prevmanu = document.getElementById("btmanuprev");
 const widmanu = document.getElementById("widmanu");
+const closeeng = document.getElementById("btclose");
 
 openWidgetButton.addEventListener('click', () => {
     widget.classList.remove('hidden');
@@ -59,13 +60,18 @@ confirmMat.addEventListener('click', () => {
 entrar.addEventListener('click', ()=>
     {
         const SetorSelected = setorop.value;
-        if (SetorSelected === "Engenharia/produção (Nível Técnico/Líder)")
+        if (SetorSelected === "Manutenção")
             {
                 window.location.href = './servicoprog.html';
             }
-            else if (SetorSelected === "Engenharia/produção (Nível Engenharia)")
+            else if (SetorSelected === "Engenharia/produção")
             {
                 widmanu.classList.add('visible');
+                closeeng.addEventListener('click', ()=>
+                    {
+                        widmanu.classList.remove('visible');
+                        widmanu.classList.add('hidden');
+                    });
                 
             }
             else if (SetorSelected==="Supervisor")
