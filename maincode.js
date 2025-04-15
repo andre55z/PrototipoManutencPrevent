@@ -60,11 +60,11 @@ confirmMat.addEventListener('click', () => {
 entrar.addEventListener('click', ()=>
     {
         const SetorSelected = setorop.value;
-        if (SetorSelected === "Manutenção")
+        if (SetorSelected === "Engenharia/produção")
             {
                 window.location.href = './servicoprog.html';
             }
-            else if (SetorSelected === "Engenharia/produção")
+            else if (SetorSelected === "Manutenção")
             {
                 widmanu.classList.add('visible');
                 closeeng.addEventListener('click', ()=>
