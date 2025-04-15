@@ -22,6 +22,7 @@ const prevmanu = document.getElementById("btmanuprev");
 const widmanu = document.getElementById("widmanu");
 const closeeng = document.getElementById("btclose");
 
+
 openWidgetButton.addEventListener('click', () => {
     widget.classList.remove('hidden');
     widget.classList.add('visible');
@@ -72,6 +73,10 @@ entrar.addEventListener('click', ()=>
                         widmanu.classList.remove('visible');
                         widmanu.classList.add('hidden');
                     });
+                progmanu.addEventListener('click', () =>
+                {
+                    window.location.href='./servicoprogmanu.html';
+                })
                 
             }
             else if (SetorSelected==="Supervisor")
@@ -85,6 +90,7 @@ entrar.addEventListener('click', ()=>
                         widsp.classList.remove('visible');
                         widsp.classList.add('hidden');
                     });
+
                 paradaMaquina.addEventListener('click', ()=>
                 {
                     window.location.href='./paradamaquina.html';
