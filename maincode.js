@@ -74,9 +74,13 @@ entrar.addEventListener('click', ()=>
                         widmanu.classList.add('hidden');
                     });
                 progmanu.addEventListener('click', () =>
-                {
-                    window.location.href='./servicoprogmanu.html';
-                })
+                    {
+                        window.location.href='./servicoprogmanu.html';
+                    })
+                prevmanu.addEventListener('click', ()=>
+                    {
+                        window.location.href='./servicoprevmanu.html';
+                    })
                 
             }
             else if (SetorSelected==="Supervisor")
