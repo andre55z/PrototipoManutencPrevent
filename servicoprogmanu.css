@@ -62,3 +62,21 @@ p
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.widdesc {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+}
+.widdesc.visible {
+    display: block;
+}
