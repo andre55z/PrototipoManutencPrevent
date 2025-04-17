@@ -51,7 +51,7 @@ p
     justify-content: center;
     text-align: center;
     font-size: smaller;
-    font-style: italic;
+
 }
 
 #seleord {
@@ -73,7 +73,7 @@ p
     border-radius: 10px;
     box-shadow: 0px 4px 6px black;
     width: 700px;
-    height: 450px;
+    height: 480px;
     text-align: center;
     transform: translate(-50%, -50%);
 }
@@ -88,8 +88,53 @@ p
     border-radius: 10px;
     border-color: 1px black;
 }
+#descri {
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 100px; 
+}
+
+#descrlines
+{
+    font-style: italic;
+}
+#DadosConstantes #chkconclu #chkstp{
+    text-align: right;
+    flex: 1;
+    font-size: medium;
+    align-items: flex-start;
+}
+#DadosConstantes
+{
+    margin: 10px;
+}
 #descri p {
     text-align: left;         
     font-family: Arial, sans-serif; 
     white-space: pre-wrap; 
+    
   }
+#chks
+{
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+#btsnoti 
+{
+    display: flex;
+    width:205px;
+    height: 30px;
+    gap:5px;
+    margin:1rem;
+}
+#btsnoti #Fechar
+{
+    background-color: red;
+}
+#btsnoti #Registrar
+{
+    background-color:limegreen;
+}
