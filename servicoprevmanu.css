@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color:  rgb(204, 204, 204);
+  }
+  
+  .menu-lateral {
+    width: 200px;
+    background-color: #5e5e5e;
+    color: white;
+    position: fixed;
+    height: 100%;
+  }
+  
+  .menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-lateral ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+  }
+  
+  .menu-lateral ul li a:hover {
+    background-color: #555;
+  }
+  
+  .conteudo {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pagina {
+    display: none;
+  }
+  
+  .pagina.active {
+    display: block;
+  }
+
+  .Importar
+  {
+    display: none;
+  }
+  .Importar.visible
+  {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Cadastrar
+  {
+    display: none;
+  }
+  .Cadastrar.visible
+  {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #ok
+  {
+    width:30px;
+    height:20px;
+    background: rgb(126, 133, 235);
+    
+  }
+  #imgnilha {
+    height: 150px;
+    width: 150px;
+    border-width: 2px;       
+    border-style: solid;     
+    border-color: #555;      
+    border-radius: 10px;     
+  }
+
+  form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+
+form
+{
+  display:flex;
+  flex-direction: column;
+  color:aliceblue;
+}
+
+#codigo #descrição #linha #frequencia
+{
+  border-radius: 10px;;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Manutenção Preventiva</title>
+  <link rel="stylesheet" href="servicoprevmanu.css">
+</head>
+<body>
+  <div class="menu-lateral">
+    <ul>
+      <li><a href="#" onclick="showPage('preventiva')">Manutenção Preventiva</a></li>
+      <li><a href="#" onclick="showPage('coleta')">Cadastro e Importação de Dados</a></li>
+    </ul>
+  </div>
+  <div class="conteudo">
+    <div id="preventiva" class="pagina" style="display: none;">
+      <h1>Manutenção Preventiva</h1>
+      <p>Conteúdo da página de manutenção preventiva.</p>
+    </div>
+    <div id="coleta" class="pagina" style="display: none;">
+      <h1>Cadastro e Importação de Dados</h1>
+      <h3>Importar ou Cadastrar?</h3>
+      <select id="SeleImpCad">
+        <option value="Importar Dados">Importar Dados</option>
+        <option value="Cadastrar Dados">Cadastrar Dados</option>
+      </select> 
+      <button id="ok">OK</button>
+      <div class="Importar" id="Importar">
+        <h3>Faça o upload da planilha</h3>
+        <img src="./imgs/imgupnilha.png" id="imgnilha">
+      </div>
+      <div class="Cadastrar" id="Cadastrar">
+        <h2>Insira os dados do produto a cadastrar</h2>
+        <form>
+          <label for="codigo">Código:</label>
+          <input type="text" id="codigo" name="codigo" placeholder="Ex: Fer0047" required>
+      
+          <label for="descricao">Descrição:</label>
+          <input type="text" id="descricao" name="descricao" placeholder="Ex: ferramenta de expansão 40mm" required>
+      
+          <label for="linha">Linha:</label>
+          <input type="text" id="linha" name="linha" placeholder="Ex: HR10" required>
+      
+          <label for="frequencia">Frequência:</label>
+          <select id="frequencia" name="frequencia" required>
+            <option value="">Selecione</option>
+            <option value="1 mês">1 mês</option>
+            <option value="3 meses">3 meses</option>
+            <option value="6 meses">6 meses</option>
+            <option value="1 ano">1 ano</option>
+          </select>
+      
+          <label for="instrucoes">Instruções:</label>
+          <textarea id="instrucoes" name="instrucoes" rows="4" placeholder="Ex: 1- Verificar segurança, 2- Realizar limpeza, 3- Verificar itens A, B, C..." required></textarea>
+      
+          <button type="submit" id="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="servicoprevmanu.js"></script>
+</body>
+</html>
