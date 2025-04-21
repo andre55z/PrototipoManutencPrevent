@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Página Manutenção Preventiva</title>
-  <link rel="stylesheet" href="servicoprevmanu.css">
+  <link rel="stylesheet" href="servicoprevmanu.css"/>
 </head>
 <body>
   <div class="menu-lateral">
@@ -13,35 +13,118 @@
       <li><a href="#" onclick="showPage('coleta')">Cadastro e Importação de Dados</a></li>
     </ul>
   </div>
+
   <div class="conteudo">
-    <div id="preventiva" class="pagina" style="display: none;">
+    <div id="preventiva" class="pagina">
       <h1>Manutenção Preventiva</h1>
-      <p>Conteúdo da página de manutenção preventiva.</p>
+      <h3>Mês: (Mês atual)</h3>
+      <select id="Seleper">
+        <option value="6 meses posteriores">6 meses posteriores</option>
+        <option value="6 meses anteriores">6 meses anteriores</option>
+        <option value="Mês atual">Mês atual</option>
+      </select>
+      <select id="SeleLinha">
+        <option value="todos">Todos</option>
+        <option value="linha_x">Linha X</option>
+        <option value="linha_y">Linha Y</option>
+        <option value="linha_z">Linha Z</option>
+      </select>
+      <button id="okay">OK</button>
+
+      <div id="mesatu" class="visible maquina-container">
+        <ul>
+          <li onclick="showWidget('Máquina 1')">Máquina 1</li>
+          <li onclick="showWidget('Máquina 2')">Máquina 2</li>
+          <li onclick="showWidget('Máquina 3')">Máquina 3</li>
+          <li onclick="showWidget('Máquina 4')">Máquina 4</li>
+          <li onclick="showWidget('Máquina 5')">Máquina 5</li>
+          <li onclick="showWidget('Máquina 6')">Máquina 6</li>
+        </ul>
+      </div>
+
+      <div id="mespos" class="maquina-container">
+        <ul>
+          <li onclick="showWidget('Máquina 1')">Máquina 1</li>
+          <li onclick="showWidget('Máquina 2')">Máquina 2</li>
+          <li onclick="showWidget('Máquina 3')">Máquina 3</li>
+        </ul>
+      </div>
+
+      <div id="mesant" class="maquina-container">
+        <ul>
+          <li onclick="showWidget('Máquina 3')">Máquina 3</li>
+          <li onclick="showWidget('Máquina 4')">Máquina 4</li>
+          <li onclick="showWidget('Máquina 6')">Máquina 6</li>
+        </ul>
+      </div>
+
+      <div id="widget" class="widget" style="display: none;">
+        <h3 id="widgetTitle">Notificações</h3>
+        <ul id="widgetList"></ul>
+        <div class="widget-buttons">
+          <button onclick="showHistorico()">Histórico</button>
+          <button onclick="showPecas()">Exibir Peças</button>
+          <button onclick="showCadastroPeca()">Cadastrar Peça</button>
+          <button onclick="fecharWidget()">Fechar</button>
+        </div>
+      </div>
+
+      <div id="historicoWidget" class="widget" style="display: none;">
+        <h3>Histórico de Notificações</h3>
+        <ul>
+          <li>Notificação antiga 1</li>
+          <li>Notificação antiga 2</li>
+        </ul>
+        <button onclick="fecharHistorico()">Fechar Histórico</button>
+      </div>
+
+      <div id="pecasWidget" class="widget" style="display: none;">
+        <h3>Peças da Máquina</h3>
+        <ul>
+          <li>Peça X</li>
+          <li>Peça Y</li>
+          <li>Peça H</li>
+        </ul>
+        <button onclick="fecharPecas()">Fechar Peças</button>
+      </div>
+
+      <div id="cadastroPecaWidget" class="widget" style="display: none;">
+        <h3>Cadastrar Nova Peça</h3>
+        <form>
+          <label>Foto da peça:</label>
+          <input type="file" />
+          <label>Descrição:</label>
+          <textarea placeholder="Descreva a peça..."></textarea>
+          <button type="button" onclick="alert('Peça cadastrada!')">Cadastrar</button>
+        </form>
+        <button onclick="fecharCadastroPeca()">Fechar Cadastro</button>
+      </div>
     </div>
-    <div id="coleta" class="pagina" style="display: none;">
+
+    <div id="coleta" class="pagina">
       <h1>Cadastro e Importação de Dados</h1>
-      <h3>Importar ou Cadastrar?</h3>
       <select id="SeleImpCad">
         <option value="Importar Dados">Importar Dados</option>
         <option value="Cadastrar Dados">Cadastrar Dados</option>
-      </select> 
+      </select>
       <button id="ok">OK</button>
+
       <div class="Importar" id="Importar">
         <h3>Faça o upload da planilha</h3>
-        <img src="./imgs/imgupnilha.png" id="imgnilha">
+        <img src="./imgs/imgupnilha.png" id="imgnilha" />
       </div>
+
       <div class="Cadastrar" id="Cadastrar">
-        <h2>Insira os dados do produto a cadastrar</h2>
         <form>
           <label for="codigo">Código:</label>
-          <input type="text" id="codigo" name="codigo" placeholder="Ex: Fer0047" required>
-      
+          <input type="text" id="codigo" name="codigo" required placeholder="Ex: Fer0047" />
+
           <label for="descricao">Descrição:</label>
-          <input type="text" id="descricao" name="descricao" placeholder="Ex: ferramenta de expansão 40mm" required>
-      
+          <input type="text" id="descricao" name="descricao" required placeholder="Ex: ferramenta de expansão 40mm" />
+
           <label for="linha">Linha:</label>
-          <input type="text" id="linha" name="linha" placeholder="Ex: HR10" required>
-      
+          <input type="text" id="linha" name="linha" required placeholder="Ex: HR10" />
+
           <label for="frequencia">Frequência:</label>
           <select id="frequencia" name="frequencia" required>
             <option value="">Selecione</option>
@@ -50,10 +133,10 @@
             <option value="6 meses">6 meses</option>
             <option value="1 ano">1 ano</option>
           </select>
-      
+
           <label for="instrucoes">Instruções:</label>
-          <textarea id="instrucoes" name="instrucoes" rows="4" placeholder="Ex: 1- Verificar segurança, 2- Realizar limpeza, 3- Verificar itens A, B, C..." required></textarea>
-      
+          <textarea id="instrucoes" name="instrucoes" rows="4" required></textarea>
+
           <button type="submit" id="submit">Enviar</button>
         </form>
       </div>

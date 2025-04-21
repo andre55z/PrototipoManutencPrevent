@@ -1,107 +1,150 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    background-color:  rgb(204, 204, 204);
-  }
-  
-  .menu-lateral {
-    width: 200px;
-    background-color: #5e5e5e;
-    color: white;
-    position: fixed;
-    height: 100%;
-  }
-  
-  .menu-lateral ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .menu-lateral ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    display: block;
-  }
-  
-  .menu-lateral ul li a:hover {
-    background-color: #555;
-  }
-  
-  .conteudo {
-    margin-left: 200px;
-    padding: 20px;
-    width: calc(100% - 200px);
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .pagina {
-    display: none;
-  }
-  
-  .pagina.active {
-    display: block;
-  }
-
-  .Importar
-  {
-    display: none;
-  }
-  .Importar.visible
-  {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .Cadastrar
-  {
-    display: none;
-  }
-  .Cadastrar.visible
-  {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #ok
-  {
-    width:30px;
-    height:20px;
-    background: rgb(126, 133, 235);
-    
-  }
-  #imgnilha {
-    height: 150px;
-    width: 150px;
-    border-width: 2px;       
-    border-style: solid;     
-    border-color: #555;      
-    border-radius: 10px;     
-  }
-
-  form {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-  }
-
-  label {
-    display: block;
-    margin-top: 10px;
-  }
-
-
-form
-{
-  display:flex;
-  flex-direction: column;
-  color:aliceblue;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  background-color: rgb(204, 204, 204);
 }
 
-#codigo #descrição #linha #frequencia
-{
-  border-radius: 10px;;
+.menu-lateral {
+  width: 200px;
+  background-color: #5e5e5e;
+  color: white;
+  position: fixed;
+  height: 100%;
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-lateral ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: block;
+}
+
+.menu-lateral ul li a:hover {
+  background-color: #555;
+}
+
+.conteudo {
+  margin-left: 200px;
+  padding: 20px;
+  width: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagina {
+  display: none;
+}
+
+.pagina.active {
+  display: block;
+}
+
+.Importar,
+.Cadastrar,
+#mesatu,
+#mespos,
+#mesant {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visible {
+  display: flex !important;
+}
+
+#imgnilha {
+  height: 150px;
+  width: 150px;
+  border: 2px solid #555;
+  border-radius: 10px;
+}
+
+form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+#mesatu ul, #mespos ul, #mesant ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mesatu li, #mespos li, #mesant li {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  width: 400px;
+  background: lightblue;
+  text-align: center;
+}
+
+#mesatu li:hover, #mespos li:hover, #mesant li:hover {
+  background: rgb(164, 166, 167);
+}
+
+.widget {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.widget h3 {
+  text-align: center;
+}
+
+.widget ul {
+  list-style: none;
+  padding: 0;
+}
+
+.widget li {
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.feito {
+  background-color: #d4edda;
+}
+
+.excluir-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
 }
