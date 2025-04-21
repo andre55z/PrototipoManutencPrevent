@@ -148,3 +148,70 @@ input, select, textarea {
   border-radius: 4px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .menu-lateral {
+    width: 100%;
+    position: static;
+    background-color: #333;
+  }
+
+  .menu-lateral ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  .menu-lateral li {
+    margin: 5px 10px;
+  }
+
+  .conteudo {
+    margin-left: 0 !important;
+    padding: 10px;
+  }
+
+  .maquina-container ul {
+    padding-left: 0;
+  }
+
+  .maquina-container li {
+    font-size: 16px;
+    padding: 12px;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .widget,
+  .Importar,
+  .Cadastrar {
+    padding: 15px;
+    margin-top: 15px;
+  }
+
+  .widget-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  img#imgnilha {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 15px auto;
+  }
+}
