@@ -58,6 +58,8 @@ body {
 
 .visible {
   display: flex !important;
+  flex-direction: column;
+  align-items: center;
 }
 
 #imgnilha {
@@ -152,104 +154,56 @@ input, select, textarea {
 @media (max-width: 768px) {
   .menu-lateral {
     width: 100%;
-    position: static;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #333;
-    z-index: 999;
+    z-index: 1000;
+    padding: 10px; /* padding igual ao conteúdo */
+    box-sizing: border-box;
   }
 
   .menu-lateral ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    list-style: none;
     flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 0;
   }
 
   .menu-lateral li {
-    margin: 5px 10px;
-    padding: 10px;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
   }
 
   .conteudo {
-    margin-left: 0 !important;
-    padding: 10px;
+    margin-top: 100px;
+    padding: 10px; /* padding igual ao menu */
+    box-sizing: border-box;
+    background-color: white;
   }
 
-  .maquina-container ul {
-    padding-left: 0;
-  }
-
-  .maquina-container li {
-    font-size: 16px;
-    padding: 12px;
-    margin: 5px 0;
-    text-align: center;
+  #mesatu,
+  #mesant,
+  #mespos {
+    background-color: white;
   }
 
   .widget,
   .Importar,
   .Cadastrar {
+    background-color: white;
     padding: 15px;
     margin-top: 15px;
-    width: 100%; /* Ajusta para 100% de largura */
+    width: 100%;
     box-sizing: border-box;
   }
 
-  .widget-buttons {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  form input,
-  form textarea,
-  form select {
-    width: 100%;
-    font-size: 14px;
-    margin-bottom: 12px;
-    padding: 8px; /* Melhor padding para os campos */
-  }
-
-  button {
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-  }
-
-  img#imgnilha {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: 15px auto;
-  }
-
-  /* Melhorar o layout do menu hamburguer */
-  .menu-lateral ul {
-    display: none; /* Inicialmente escondido */
-  }
-
-  .menu-lateral.active ul {
-    display: flex; /* Exibe o menu quando ativado */
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-lateral.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
-    z-index: 9999;
-  }
-
-  /* Ícone do menu hamburguer */
-  .menu-lateral .hamburger {
-    display: block;
-    background-color: #333;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 10px;
-    margin: 15px;
+  body {
+    background-color: white;
   }
 }
